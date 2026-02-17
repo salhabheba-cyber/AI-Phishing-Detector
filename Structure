@@ -1,0 +1,10 @@
+AI-PhishDetect-2026/
+│
+├── src/classifier.py          # Core classification engine
+├── app/app.py                  # Gradio web interface
+├── tests/test_phishing.py      # Unit tests
+├── samples/                    # Example emails
+├── screenshots/                 # Proof of execution
+├── requirements.txt            # Dependencies
+├── LICENSE                     # MIT License
+└── README.md                   # This file
