@@ -1,0 +1,3 @@
+Your PayPal account has been temporarily limited due to unusual activity.
+Please verify your identity within 24 hours to restore full access:
+http://fake-paypal-security.com/verify
