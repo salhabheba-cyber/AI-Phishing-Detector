@@ -1,0 +1,3 @@
+Your Amazon order #123-4567890 has shipped.
+Track your package here: https://amazon.com/track/123456
+Estimated delivery: tomorrow
