@@ -88,3 +88,19 @@ python
 !python detections/phishing_detector/app.py
 <img width="716" height="388" alt="07_app_ready_to_use" src="https://github.com/user-attachments/assets/5fab7bea-04e7-44da-abc0-29e7cef70a5f" />
 
+Step 8: Go to Hugging Face
+Open: huggingface.co
+Login to your account (or create one for free)
+create new space
+Fill in Space Details
+Upload these 3 files:
+File 1: app.py
+File 2: requirements.txt
+File 3: README.md
+Wait for Build
+
+step 9 :Your App is Live!
+Once built, your app will be at:....
+
+check mine
+https://huggingface.co/spaces/YOUR_USERNAME/ai-phishdetect-2026
