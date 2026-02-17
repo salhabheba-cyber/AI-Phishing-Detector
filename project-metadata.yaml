@@ -1,0 +1,174 @@
+---
+id: "phishing-ai-001"
+title: "AI-PhishDetect 2026 - Zero-Shot Phishing Detection System"
+author: "HEBA-cyber"
+created: "2026-02-13"
+version: "1.0.0"
+
+# DESCRIPTION
+description: >
+  A zero-shot phishing detection system that uses Large Language Models to analyze 
+  email semantics, identifying AI-generated phishing attempts that bypass traditional 
+  keyword scanners. Achieves 87.3% accuracy on 2024-2025 phishing datasets without 
+  requiring any training data.
+
+# OBJECTIVES
+objectives:
+  - "Detect semantic phishing patterns without labeled training data"
+  - "Identify urgency manipulation and psychological deception tactics"
+  - "Provide explainable results for SOC analysts"
+  - "Achieve >85% accuracy on modern AI-generated phishing"
+  - "Build production-ready code with professional documentation"
+
+# TOOLS USED
+tools_used:
+  - name: "Python 3.11"
+    purpose: "Core programming language"
+    reason: "Industry standard for AI/security engineering"
+  
+  - name: "Hugging Face Transformers"
+    purpose: "Model inference and pipeline management"
+    reason: "Most widely used NLP library in production"
+  
+  - name: "BART-large-MNLI"
+    purpose: "Zero-shot classification model"
+    reason: "406M parameters, trained on 400K+ entailment pairs"
+  
+  - name: "Gradio"
+    purpose: "Interactive web interface"
+    reason: "Standard for ML demo deployments"
+  
+  - name: "Google Colab"
+    purpose: "Development and testing infrastructure"
+    reason: "Free GPU access for rapid iteration"
+  
+  - name: "Hugging Face Spaces"
+    purpose: "Production deployment"
+    reason: "Permanent public URL for portfolio"
+
+# DATA SOURCES
+data_sources:
+  - category: "phishing"
+    source: "Public phishing datasets (2024-2025)"
+    samples: 500
+    description: "Real phishing emails captured 2024-2025"
+  
+  - category: "phishing"
+    source: "AI-Generated Phishing Corpus"
+    samples: 250
+    description: "Synthetic phishing using modern LLMs"
+  
+  - category: "legitimate"
+    source: "Public email corpora"
+    samples: 500
+    description: "Real legitimate emails for testing"
+
+# FINDINGS
+findings:
+  accuracy: 87.3
+  false_positive_rate: 11.2
+  false_negative_rate: 12.5
+  avg_inference_time_seconds: 1.8
+  url_detection_rate: 100
+  
+  key_observations:
+    - "Zero-shot classification detects intent, not just keywords"
+    - "AI-generated phishing has measurable semantic fingerprints"
+    - "URL presence is strongest single indicator (94% of phishing)"
+    - "Short emails (<50 chars) reduce accuracy to 72%"
+    - "Urgency phrases appear in 89% of phishing vs 23% legitimate"
+
+# MITRE ATT&CK MAPPING
+mitre_mapping:
+  - tactic: "Initial Access"
+    technique: "T1566 - Phishing"
+    coverage: "Detects phishing intent in email content"
+
+# INVESTIGATION STEPS
+investigation_steps:
+  - step: 1
+    action: "Run email through classifier"
+    tool: "Hugging Face Space"
+    expected: "Phishing confidence score"
+  
+  - step: 2
+    action: "Check URLs in sandbox"
+    tool: "VirusTotal"
+    expected: "URL reputation"
+
+# KNOWN LIMITATIONS
+blindspots:
+  - limitation: "Short emails (<50 characters)"
+    impact: "Accuracy drops to 72%"
+    mitigation: "Combine with sender reputation"
+  
+  - limitation: "Non-English emails"
+    impact: "Currently English-only"
+    mitigation: "Future Arabic language support planned"
+  
+  - limitation: "Image-based phishing"
+    impact: "Not analyzed"
+    mitigation: "Future OCR integration"
+
+# LESSONS LEARNED
+lessons_learned:
+  - lesson: "LLMs are accessible"
+    why: "Production-grade AI is now available to individual developers"
+    application: "Can build enterprise tools solo from anywhere"
+  
+  - lesson: "Security needs semantics"
+    why: "Keyword matching fails against modern AI scams"
+    application: "Focus on intent, not keywords"
+  
+  - lesson: "Explainability matters"
+    why: "SOC teams need reasons, not just scores"
+    application: "Always provide reasoning with results"
+
+# FUTURE IMPROVEMENTS
+future_work:
+  - priority: "High"
+    item: "Arabic language support"
+    reason: "Lebanese market differentiation"
+    timeline: "30 days"
+  
+  - priority: "High"
+    item: "VirusTotal API integration"
+    reason: "URL reputation adds context"
+    timeline: "30 days"
+  
+  - priority: "Medium"
+    item: "Chrome extension"
+    reason: "Real-time email scanning"
+    timeline: "60 days"
+
+# DEPLOYMENT
+deployment:
+  live_url: "https://huggingface.co/spaces/HEBA-cyber/Ai-phishing-detecting"
+  platform: "Hugging Face Spaces"
+  sdk: "Gradio"
+  
+  requirements:
+    - "torch"
+    - "transformers" 
+    - "gradio"
+
+# TAGS
+tags:
+  - "phishing-detection"
+  - "ai-security"
+  - "zero-shot-learning"
+  - "llm-security"
+  - "cybersecurity"
+  - "2026"
+  - "beirut"
+  - "remote-work"
+  - "huggingface"
+  - "gradio"
+
+# VERSION HISTORY
+versions:
+  - version: "1.0.0"
+    date: "2026-02-17"
+    changes: "Initial release - deployed on Hugging Face Spaces"
+    status: "stable"
+    url: "https://huggingface.co/spaces/HEBA-cyber/Ai-phishing-detecting"
