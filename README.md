@@ -20,36 +20,19 @@
 
 ###  Why This Matters in 2026
 
-Traditional phishing detection relies on keywords like *"Nigerian prince"* or *"verify account"*. Modern AI-generated phishing uses perfect grammar and varied vocabulary, bypassing these scanners. This system detects the **intent behind the words**.
+Traditional phishing detection relies on keywords. Modern AI-generated phishing uses perfect grammar and varied vocabulary, bypassing these scanners. This system detects the **intent behind the words**.
 
 ###  Key Features
 
 - ✅ **Zero-shot learning** – No training data required, works immediately
-- ✅ **Semantic intent analysis** – Detects psychological manipulation tactics
+- ✅ **Semantic intent analysis** – Detects psychological manipulation
 - ✅ **AI-generated detection** – Catches scams from GPT-4, Claude, Gemini
 - ✅ **Explainable results** – Provides reasoning behind every verdict
 - ✅ **Interactive UI** – Test any email instantly with Gradio
 
 ---
 
-##  Technology Stack
-
-| Component | Technology | Purpose |
-|-----------|------------|---------|
-| **LLM Model** | BART-large-MNLI | Zero-shot classification (406M params) |
-| **Framework** | Hugging Face Transformers | Model inference |
-| **UI** | Gradio | Interactive web interface |
-| **Language** | Python 3.11 | Core programming |
-
----
-
 ##  Quick Start
-
-### Option 1: Run in Google Colab (Free GPU)
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-PhishDetect-2026/blob/main/AI_PhishDetect_LabA.ipynb)
-
-### Option 2: Run Locally
 
 ```bash
 # Clone the repository
