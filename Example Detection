@@ -1,0 +1,11 @@
+Input:
+
+text
+Your PayPal account has been limited. Click here: http://fake-paypal.com
+Output:
+
+Verdict: 🔴 HIGH RISK - PHISHING DETECTED
+
+Confidence: 47%
+
+Recommendation: BLOCK IMMEDIATELY. Do not click links.
