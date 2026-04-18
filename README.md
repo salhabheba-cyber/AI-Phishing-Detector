@@ -22,14 +22,6 @@
 
 Traditional phishing detection relies on keywords. Modern AI-generated phishing uses perfect grammar and varied vocabulary, bypassing these scanners. This system detects the **intent behind the words**.
 
-###  Key Features
-
-- ✅ **Zero-shot learning** – No training data required, works immediately
-- ✅ **Semantic intent analysis** – Detects psychological manipulation
-- ✅ **AI-generated detection** – Catches scams from GPT-4, Claude, Gemini
-- ✅ **Explainable results** – Provides reasoning behind every verdict
-- ✅ **Interactive UI** – Test any email instantly with Gradio
-
 ---
 
 # 🛡️ AI-PhishDetect-2026 - Zero-Shot LLM Phishing Detection System
